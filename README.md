@@ -18,7 +18,7 @@ where one of the conditions is strictly less.
 
 The main file is located in nsg.cpp
 
-The binary can be created by :  g++ -o nsg nsg.cpp -O3 -std=c++11
+The binary can be created by :  g++ -O3 nsg.cpp -o nsg -std=c++11
 
 ###Usage: NSG [-flags] [inputFilename] [outputFilename]
 
