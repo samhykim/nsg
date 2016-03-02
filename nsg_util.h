@@ -4,9 +4,6 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
-//to de-duplicate reads: awk '!seen[$0]++' inputFile > outputFile
-#define INPUT_FILE "saccha.reads" //default input file
-#define MAX_READS 625000 //roughly when I'll run out of memory on my laptop.
 
 using namespace std;
 using read_t =  int ;
