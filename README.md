@@ -14,13 +14,13 @@ Assuming edges (u1, v1), (u2, v1), (u2, v2),
 
 where one of the conditions is strictly less. 
 
-##Usage of the implementation: 
+##Creating the binary: 
 
 The main file is located in nsg.cpp
 
 The binary can be created by :  g++ -o nsg nsg.cpp -O3 -std=c++11
 
-###Usage: usage: NSG [-flags] [inputFilename] [outputFilename]
+###Usage: NSG [-flags] [inputFilename] [outputFilename]
 
 valid flags are:
 
@@ -31,5 +31,5 @@ valid flags are:
 
    e : do read extension step
 
-example: './nsg -x -t 1 bact1.reads' will run in serial, disable output, and use reads from bact1.reads.
+example: './nsg -xt 1 bact1.reads' will run in serial, disable output, and use reads from bact1.reads.
 
