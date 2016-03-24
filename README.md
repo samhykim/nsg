@@ -20,6 +20,8 @@ The main file is located in nsg.cpp
 
 The binary can be created by :  g++ -O3 nsg.cpp -o nsg -std=c++11
 
+The nsg binary is currently compiled on a Linux machine.
+
 ###Usage: NSG [-flags] [inputFilename] [outputFilename]
 
 valid flags are:
@@ -32,4 +34,17 @@ valid flags are:
    e : do read extension step
 
 example: './nsg -xt 1 bact1.reads' will run in serial, disable output, and use reads from bact1.reads.
+
+###File Input
+The nsg algorithm can take in .reads files that either start with >read[#] every other line 
+
+The sample .revreads files contain 8000 reads and its reverse complements of length 3000.
+
+### File Output Format
+The .revxzgraph files contain sample outputs of the nsg algorithm. The format of each line are as follows:
+
+	[read ID] [greedy ID] [greedy overlap] [not-so-greedy ID] [not-so-greedy overlap]
+
+The [greedy overlap] is the length of the overlap the prefix of read with [greedy ID] has with the suffix of read with [read ID].
+The same applies to the not-so-greedy read. 
 
