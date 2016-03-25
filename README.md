@@ -36,7 +36,7 @@ valid flags are:
 example: './nsg -xt 1 bact1.reads' will run in serial, disable output, and use reads from bact1.reads.
 
 ###File Input
-The nsg algorithm can take in .reads files that either start with >read[#] every other line 
+The nsg algorithm can take in .reads files that either start with >read[#] every other line or only contain reads.
 
 The sample .revreads files contain 8000 reads and its reverse complements of length 3000.
 
