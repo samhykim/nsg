@@ -36,9 +36,10 @@ valid flags are:
 example: './nsg -xt 1 bact1.reads' will run in serial, disable output, and use reads from bact1.reads.
 
 ###File Input
-The nsg algorithm can take in .reads files that either start with >read[#] every other line 
 
-The sample .revreads files contain 8000 reads and its reverse complements of length 3000.
+The input to the nsg algorithm should be a list of reads, one per line. Alternatively, fasta files with read headers (e.g., >read5) can also be used. The .revreads sample files contain 8000 simulated reads of length 3000, followed by their reverse complements for E. coli K12, R. sphaeroides, and S. aureus.
+
+
 
 ### File Output Format
 The .revxzgraph files contain sample outputs of the nsg algorithm. The format of each line are as follows:
