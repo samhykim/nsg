@@ -72,12 +72,7 @@ read_t GenHashes(const string fname, vector<hash_s> * hashes, read_t num_reads, 
         hashB=((B*(hashB-bPow[read_length-1]*readSeq[k]))%P+P)%P;
         (*hashes)[readID+num_reads*k].prefix=(hashA<<32) | hashB;
     }
-    
-    readID++;
-    if (readID >= MAX_READS) {
-      break;
-    }
-    
+    readID++;    
   }
   readFile.close();
   // Since we start index at 1
